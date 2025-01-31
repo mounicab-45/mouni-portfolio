@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mediaqueries.css"
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
-  <body>
-    <nav id="nav">
-      <div class="logo">Mounica Vattikuti</div>
 
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mounica Vattikuti</div>
+      <!-- <button class="theme">Theme</button> -->
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -34,7 +36,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+          <!-- <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li> -->
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -43,7 +45,7 @@
       <div class="section__pic-container">
         <img
           id="profile1"
-          src="./assets/icons/profile-pic-modified.jpeg"
+          src="./assets/profile-pic.jpeg"
           alt="Mounica Vattikuti's profile picture"
           title="Mounica Vattikuti"
         />
@@ -54,19 +56,26 @@
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <a
-            href="https://drive.google.com/file/d/1QPShDK5Ow-rhDr3cXWDeDFJYHnTtxhqT/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sPdAgIaLkFTJ1A3u1oTHXhQv_quEMYvT/view?usp=sharing"
             target="_blank"
           >
             <button class="btn btn-color-2">See Resume</button>
           </a>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
+          <!-- <a target="_blank" href="https://www.linkedin.com/in/nikhilkamble-/">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a> -->
           <a target="_blank" href="https://octopi.health/">
             <img
-              src="./assets/icons/domain.png"
+              src="./assets/domain.png"
               alt="My LinkedIn profile"
               class="icon"
             />
@@ -74,7 +83,7 @@
 
           <a target="_blank" href="https://github.com/mounica-45">
             <img
-              src="./assets/icons/Github.png"
+              src="./assets/github.png"
               alt="My Github profile"
               class="icon"
             />
@@ -93,33 +102,33 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/icons/experience.png"
+                src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
+              <h3>Work Experience</h3>
               <p>2.5+ years <br />Frontend Development</p>
             </div>
             <div class="details-container">
               <img
-                src="./assets/icons/education.png"
+                src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
               <p>Bachelor of Technology</p>
+              <p>Computer Science</p>
             </div>
           </div>
           <div class="text-container">
             <p>
               <span class="highlight"></span> I'm
-              <span class="highlight">Frontend Developer</span>,I build apps
+              <span class="highlight">Frontend Developer</span>, I build apps
               with a focus on
-              <span class="highlight">JavaScript React & Redux</span>
+              <span class="highlight">HTML,CSS,JavaScript React & Redux</span>
               considering all the aspects of
-              <span class="highlight"><strong>UI/UX</strong></span> . I enjoy
-              turning complex problems into simple, beautiful and intuitive
-              designs. <br />
+              <span class="highlight">UI/UX</span> . I enjoy turning complex
+              problems into simple, beautiful and intuitive designs. <br />
               A <span class="highlight">Software Engineer</span> , who loves to
               solve problems. I am having an experience of building
               high-performing, responsive, beautiful web applications to deliver
@@ -135,7 +144,7 @@
         </div>
       </div>
       <img
-        src="./assets/icons/arrow.png"
+        src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
@@ -151,7 +160,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -162,7 +171,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -173,7 +182,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -184,7 +193,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -195,7 +204,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -205,7 +214,7 @@
                 </div>
               </article>
               <!-- <article>
-              <img src="./assets/icons/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>TypeScript</h3>
                 <i>Basic</i>
@@ -214,7 +223,7 @@
             </article> -->
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -225,7 +234,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -236,7 +245,7 @@
               </article>
 
               <!-- <article>
-              <img src="./assets/icons/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>React</h3>
                 <p>Basic</p>
@@ -245,7 +254,7 @@
 
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -260,7 +269,7 @@
             <h2 class="experience-sub-title">Development Tools & Softwares</h2>
             <div class="article-container">
               <!-- <article>
-              <img src="./assets/icons/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>Git</h3>
                 <p>Basic</p>
@@ -268,7 +277,7 @@
             </article> -->
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -279,7 +288,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -290,7 +299,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -299,10 +308,20 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-
               <article>
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material Icons</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -313,7 +332,7 @@
               </article>
               <article id="lastSkill">
                 <img
-                  src="./assets/icons/checkmark.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -323,14 +342,14 @@
                 </div>
               </article>
               <!-- <article>
-              <img src="./assets/icons/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>Express JS</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
-              <img src="./assets/icons/checkmark.png" alt="Experience icon" class="icon" />
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>Git</h3>
                 <p>Intermediate</p>
@@ -341,7 +360,7 @@
         </div>
       </div>
       <img
-        src="./assets/icons/arrow.png"
+        src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -358,21 +377,24 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/portfolio-projects/todo.png"
+                src="./assets/todo.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Todo List</h2>
             <div class="btn-container">
-              <a
+                <a
                 target="_blank"
                 href="https://bitbucket.org/mounicachowdary/todo_list/src/Development/"
               >
                 <button class="btn btn-color-2 project-btn">Github</button>
               </a>
 
-              <a target="_blank" href="https://todolistt0.netlify.app/">
+              <a
+                target="_blank"
+                href="https://todolistt0.netlify.app/"
+              >
                 <button class="btn btn-color-2 project-btn">Live Demo</button>
               </a>
             </div>
@@ -380,25 +402,28 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/portfolio-projects/weather.png"
+                src="./assets/projects/weather.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Live Weather</h2>
             <div class="btn-container">
-              <a
+                <a
                 href="https://bitbucket.org/mounicachowdary/live_wetaher_app/src/Development/"
                 target="_blank"
               >
                 <button class="btn btn-color-2 project-btn">Github</button>
               </a>
-              <a target="_blank" href="https://liveeeweatherapp.netlify.app/">
+              <a
+                target="_blank"
+                href="https://liveeeweatherapp.netlify.app/"
+              >
                 <button class="btn btn-color-2 project-btn">Live Demo</button>
               </a>
             </div>
           </div>
-          <!-- <div class="details-container color-container">
+          <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/projects/box shadow.png"
@@ -425,17 +450,107 @@
               >
                 <button class="btn btn-color-2 project-btn">Live Demo</button>
               </a>
+              <!--                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nikhilkamble02/css-box-shadow-generator-chrome-extension'">
+                            Github
+                        </button>
+                        <button disabled class="btn btn-color-2 project-btn">
+                            Live Demo
+                        </button> -->
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
       <img
-        src="./assets/icons/arrow.png"
+        src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- blog section  -->
+    <!-- <section id="blogs">
+      <p class="section__text__p1">Have a Look on My Recent</p>
+      <h1 class="title">Blogs</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blogs/blog-1.jpg"
+                alt="Project 1"
+                class="blog-img"
+              />
+            </div>
+            <h2
+              class="experience-sub-title project-title"
+              style="font-size: 1.55rem"
+            >
+              "Higher order array methods in JavaScript"
+            </h2>
+            <div class="btn-container">
+              <a
+                target="_blank"
+                href="https://medium.com/@kamblenikhil7378/higher-order-array-methods-in-javascript-787e2e70a870"
+              >
+                <button class="btn btn-color-2 project-btn">Read</button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blogs/blog-2.png"
+                alt="Project 2"
+                class="blog-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              When to Use em, rem CSS units
+            </h2>
+            <div class="btn-container">
+              <a
+                target="_blank"
+                href="https://medium.com/@kamblenikhil7378/when-to-use-em-rem-css-units-820dda4ab680"
+              >
+                <button class="btn btn-color-2 project-btn">Read</button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blogs/css variables.jpg"
+                alt="Project 3"
+                class="blog-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">
+              CSS Variables Explained in Details
+            </h2>
+            <div class="btn-container">
+              <a
+                target="_blank"
+                href="https://medium.com/@kamblenikhil7378/css-variables-a23d6f894e2a"
+              >
+                <button class="btn btn-color-2 project-btn">Read</button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> -->
+
     <!-- contact section  -->
 
     <section id="contact">
@@ -444,7 +559,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/icons/email.png"
+            src="./assets/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
@@ -454,7 +569,16 @@
             >
           </p>
         </div>
-        <!--  -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.jpg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <h4>8309603550</h4>
+          </p>
+        </div>
       </div>
     </section>
 
